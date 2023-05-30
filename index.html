@@ -21,7 +21,7 @@
 </ul>
 
   <div class="container">
-    <header class="site-header">
+    <header role="banner" class="site-header">
       <h1>Jam Box Studios</h1>
       <nav role="navigation" id="main-nav">
         <ul>
@@ -31,7 +31,7 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://placekitten.com/1200/900" alt="image of a kitten" class="banner" role="banner">
+      <img role="img" src="https://placekitten.com/1200/900" alt="image of a kitten" class="banner">
     </header>
     <div role="main" id="main-content">
       <h1 role="heading">Welcome to Jam Box</h1>
@@ -39,7 +39,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div itemscope itemtype="https://schema.org/Person" id="owner-location">
         <h1 role="heading">Meet the owner</h1>
-        <ul role="complementary">
+        <ul role="list">
           <li itemprop= "name">Name: John Doe</li>
           <li itemprop= "jobTitle">Title: CEO</li>
           <li itemprop= "email">Email: johnjoe@jambox.ca</li>
@@ -63,7 +63,7 @@
           <label aria-label="Your Message Subject Goes Below">Subject</label>
           <input type="text" placeholder="Subject">
           <label aria-label="Input Your Message Below">Your Message</label>
-          <input></input>
+          <input type="text" placeholder="Your Message">
           <button type="submit">Send</button>
         </form>
       </article>
