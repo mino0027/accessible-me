@@ -15,7 +15,7 @@
 <ul class="skip-links">
   <li><a href="#main-nav">Skip to main nav</a></li>
   <li><a href="#main-content">Skip to main content</a></li>
-  <li><a href="#owner">Skip to the owner and location</a></li>
+  <li><a href="#owner-location">Skip to the owner and location</a></li>
   <li><a href="#contact-section">Skip to contact section</a></li>
 </ul>
 
@@ -37,20 +37,20 @@
       <h1>Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div id="owner">
+      <div itemscope itemtype="https://schema.org/Person"id="owner-location">
         <h1>Meet the owner</h1>
         <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+          <li itemprop= "name">Name: John Doe</li>
+          <li itemprop= "jobTitle">Title: CEO</li>
+          <li itemprop= "email">Email: johnjoe@jambox.ca</li>
+          <li itemprop= "telephone">Phone: 613-000-0000</li>
         </ul>
         <h1>Address</h1>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="legalname">Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road</span>,
+          <span itemprop="addressLocality">Musicville</span>, <span itemprop="addressCountry">Danceistan</span>
+          <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </div>
       <div id="contact-section">
