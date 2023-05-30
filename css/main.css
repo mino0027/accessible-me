@@ -88,3 +88,12 @@ form button {
 }
 
 /*using skip link styling to hide the skip links to regular page viewers*/
+
+body {
+  background-color: aliceblue;
+}
+
+form button {
+  background-color: white;
+}
+
