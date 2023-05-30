@@ -45,7 +45,7 @@
           <li itemprop= "email">Email: johnjoe@jambox.ca</li>
           <li itemprop= "telephone">Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
+        <h1 role="heading">Address</h1>
         <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span itemprop="legalname">Jambox Studios</span>
           <span itemprop="streetAddress">123 Guitar Road</span>,
@@ -53,20 +53,22 @@
           <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </div>
-      <div id="contact-section">
-        <h1>Contact Us</h1>
-        <form action="thanks.html">
-          <label>Full Name</label>
+      <article role="article" id="contact-section">
+        <h1 role="heading">Contact Us</h1>
+        <form role="form" action="thanks.html">
+          <label aria-label="Your Full Name Goes Below">Full Name</label>
           <input type="text" placeholder="Full Name">
+          <label aria-label="Your Email Goes Below">Email</label>
           <input type="text" placeholder="Email">
+          <label aria-label="Your Message Subject Goes Below">Subject</label>
           <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+          <label aria-label="Input Your Message Below">Your Message</label>
+          <input></input>
           <button type="submit">Send</button>
         </form>
-      </div>
+      </article>
     </div>
-    <footer class="site-footer">
+    <footer role="contentinfo" class="site-footer">
       &copy; 2021 Jam Box Studios
     </footer>
   </div>
